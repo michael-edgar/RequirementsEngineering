@@ -1,0 +1,11 @@
+C:\Users\t00194492\Desktop\Lab1\StockSYS\StockSYS\bin\Debug\StockSYS.exe.config
+C:\Users\t00194492\Desktop\Lab1\StockSYS\StockSYS\bin\Debug\StockSYS.exe
+C:\Users\t00194492\Desktop\Lab1\StockSYS\StockSYS\bin\Debug\StockSYS.pdb
+C:\Users\t00194492\Desktop\Lab1\StockSYS\StockSYS\obj\Debug\StockSYS.csprojResolveAssemblyReference.cache
+C:\Users\t00194492\Desktop\Lab1\StockSYS\StockSYS\obj\Debug\StockSYS.Properties.Resources.resources
+C:\Users\t00194492\Desktop\Lab1\StockSYS\StockSYS\obj\Debug\StockSYS.csproj.GenerateResource.Cache
+C:\Users\t00194492\Desktop\Lab1\StockSYS\StockSYS\obj\Debug\StockSYS.csproj.CoreCompileInputs.cache
+C:\Users\t00194492\Desktop\Lab1\StockSYS\StockSYS\obj\Debug\StockSYS.exe
+C:\Users\t00194492\Desktop\Lab1\StockSYS\StockSYS\obj\Debug\StockSYS.pdb
+C:\Users\t00194492\Desktop\Lab1\StockSYS\StockSYS\obj\Debug\StockSYS.frmMainMenu.resources
+C:\Users\t00194492\Desktop\Lab1\StockSYS\StockSYS\obj\Debug\StockSYS.frmSupplierNew.resources
