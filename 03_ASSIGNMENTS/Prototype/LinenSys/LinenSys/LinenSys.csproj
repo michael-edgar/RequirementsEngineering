@@ -45,14 +45,92 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AddCustomer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddCustomer.Designer.cs">
+      <DependentUpon>AddCustomer.cs</DependentUpon>
+    </Compile>
     <Compile Include="AddLinen.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="AddLinen.Designer.cs">
       <DependentUpon>AddLinen.cs</DependentUpon>
     </Compile>
+    <Compile Include="CalculateCustomerEarnings.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CalculateCustomerEarnings.Designer.cs">
+      <DependentUpon>CalculateCustomerEarnings.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CalculateEarnings.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CalculateEarnings.Designer.cs">
+      <DependentUpon>CalculateEarnings.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CancelOrder.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CancelOrder.Designer.cs">
+      <DependentUpon>CancelOrder.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CollectLaundry.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CollectLaundry.Designer.cs">
+      <DependentUpon>CollectLaundry.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DispatchDelivery.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DispatchDelivery.Designer.cs">
+      <DependentUpon>DispatchDelivery.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LogOrder.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LogOrder.Designer.cs">
+      <DependentUpon>LogOrder.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MainMenu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainMenu.Designer.cs">
+      <DependentUpon>MainMenu.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RecordRejects.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RecordRejects.Designer.cs">
+      <DependentUpon>RecordRejects.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RemoveCustomer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RemoveCustomer.Designer.cs">
+      <DependentUpon>RemoveCustomer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RemoveLinen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RemoveLinen.Designer.cs">
+      <DependentUpon>RemoveLinen.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TrackRejectCost.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TrackRejectCost.Designer.cs">
+      <DependentUpon>TrackRejectCost.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UpdateCustomer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UpdateCustomer.Designer.cs">
+      <DependentUpon>UpdateCustomer.cs</DependentUpon>
+    </Compile>
     <Compile Include="UpdateLinen.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -61,6 +139,9 @@
     </Compile>
     <EmbeddedResource Include="AddLinen.resx">
       <DependentUpon>AddLinen.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainMenu.resx">
+      <DependentUpon>MainMenu.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -71,6 +152,9 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="RemoveLinen.resx">
+      <DependentUpon>RemoveLinen.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="UpdateLinen.resx">
       <DependentUpon>UpdateLinen.cs</DependentUpon>
     </EmbeddedResource>
