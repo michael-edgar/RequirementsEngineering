@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace LinenSys
 {
-    public partial class LogOrder : Form
+    public partial class frmLogOrder : Form
     {
-        public LogOrder()
+        public frmLogOrder()
         {
             InitializeComponent();
         }

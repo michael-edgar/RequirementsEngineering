@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace LinenSys
 {
-    public partial class RemoveCustomer : Form
+    public partial class frmRemoveCustomer : Form
     {
-        public RemoveCustomer()
+        public frmRemoveCustomer()
         {
             InitializeComponent();
         }

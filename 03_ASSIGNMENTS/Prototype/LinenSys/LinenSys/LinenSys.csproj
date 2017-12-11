@@ -137,8 +137,29 @@
     <Compile Include="UpdateLinen.Designer.cs">
       <DependentUpon>UpdateLinen.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="AddCustomer.resx">
+      <DependentUpon>AddCustomer.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="AddLinen.resx">
       <DependentUpon>AddLinen.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CalculateCustomerEarnings.resx">
+      <DependentUpon>CalculateCustomerEarnings.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CalculateEarnings.resx">
+      <DependentUpon>CalculateEarnings.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CancelOrder.resx">
+      <DependentUpon>CancelOrder.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CollectLaundry.resx">
+      <DependentUpon>CollectLaundry.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DispatchDelivery.resx">
+      <DependentUpon>DispatchDelivery.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LogOrder.resx">
+      <DependentUpon>LogOrder.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="MainMenu.resx">
       <DependentUpon>MainMenu.cs</DependentUpon>
@@ -152,8 +173,20 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="RecordRejects.resx">
+      <DependentUpon>RecordRejects.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RemoveCustomer.resx">
+      <DependentUpon>RemoveCustomer.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="RemoveLinen.resx">
       <DependentUpon>RemoveLinen.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TrackRejectCost.resx">
+      <DependentUpon>TrackRejectCost.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UpdateCustomer.resx">
+      <DependentUpon>UpdateCustomer.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UpdateLinen.resx">
       <DependentUpon>UpdateLinen.cs</DependentUpon>

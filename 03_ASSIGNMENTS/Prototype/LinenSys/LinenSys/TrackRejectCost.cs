@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace LinenSys
 {
-    public partial class TrackRejectCost : Form
+    public partial class frmTrackRejectCost : Form
     {
-        public TrackRejectCost()
+        public frmTrackRejectCost()
         {
             InitializeComponent();
         }

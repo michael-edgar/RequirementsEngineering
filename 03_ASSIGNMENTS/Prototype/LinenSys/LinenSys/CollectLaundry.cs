@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace LinenSys
 {
-    public partial class CollectLaundry : Form
+    public partial class frmCollectLaundry : Form
     {
-        public CollectLaundry()
+        public frmCollectLaundry()
         {
             InitializeComponent();
         }

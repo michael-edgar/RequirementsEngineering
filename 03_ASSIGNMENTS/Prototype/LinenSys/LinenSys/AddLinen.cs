@@ -12,9 +12,12 @@ namespace LinenSys
 {
     public partial class frmAddLinen : Form
     {
-        public frmAddLinen()
+        frmMainMenu parent;
+
+        public frmAddLinen(frmMainMenu Parent)
         {
             InitializeComponent();
+            parent = Parent;
         }
 
         private void frmAddLinen_Load(object sender, EventArgs e)
@@ -24,7 +27,59 @@ namespace LinenSys
 
         private void btnAddLinen_Click(object sender, EventArgs e)
         {
+            //validate data
+            float check;
+            if (txtLinenName.Text.Equals(""))
+            {
+                MessageBox.Show("Linen Name must be entered", "Error");
+                txtLinenName.Focus();
+                return;
+            }
+            if (txtLinenCode.Text.Equals(""))
+            {
+                MessageBox.Show("Linen Name must be entered", "Error");
+                txtLinenName.Focus();
+                return;
+            }
+            if (!float.TryParse(txtHirePrice.Text, out check))
+            {
+                MessageBox.Show("Hire Price must be numeric", "Error");
+                txtHirePrice.Focus();
+                return;
+            }
+            if (!float.TryParse(txtCleaningPrice.Text, out check))
+            {
+                MessageBox.Show("Cleaning Price must be numeric", "Error");
+                txtCleaningPrice.Focus();
+                return;
+            }
+            if (!float.TryParse(txtRejectPrice.Text, out check))
+            {
+                MessageBox.Show("Reject Price must be numeric", "Error");
+                txtRejectPrice.Focus();
+                return;
+            }
+            else
+            {
+                String addedLinen;
+                addedLinen = "\nLinen Name: " + txtLinenName.Text + "\nLinen Code: " + txtLinenCode.Text + 
+                             "\nHire Price: " + txtHirePrice.Text + "\nCleaning Price: " + 
+                             txtCleaningPrice.Text + "\nReject Price: " + txtRejectPrice.Text;
 
+                MessageBox.Show("The new Linen has been added to the system." +addedLinen , "Added Linen");
+                txtLinenName.Clear();
+                txtLinenCode.Clear();
+                txtHirePrice.Clear();
+                txtCleaningPrice.Clear();
+                txtRejectPrice.Clear();
+                return;
+            }
+        }
+
+        private void backToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            this.Close();
+            parent.Show();
         }
     }
 }

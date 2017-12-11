@@ -1,6 +1,6 @@
 ﻿namespace LinenSys
 {
-    partial class TrackRejectCost
+    partial class frmTrackRejectCost
     {
         /// <summary>
         /// Required designer variable.
@@ -28,9 +28,17 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
+            this.SuspendLayout();
+            // 
+            // frmTrackRejectCost
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.ClientSize = new System.Drawing.Size(284, 261);
+            this.Name = "frmTrackRejectCost";
             this.Text = "TrackRejectCost";
+            this.ResumeLayout(false);
+
         }
 
         #endregion

@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace LinenSys
 {
-    public partial class DispatchDelivery : Form
+    public partial class frmDispatchDelivery : Form
     {
-        public DispatchDelivery()
+        public frmDispatchDelivery()
         {
             InitializeComponent();
         }

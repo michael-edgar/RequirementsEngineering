@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace LinenSys
 {
-    public partial class RecordRejects : Form
+    public partial class frmRecordRejects : Form
     {
-        public RecordRejects()
+        public frmRecordRejects()
         {
             InitializeComponent();
         }

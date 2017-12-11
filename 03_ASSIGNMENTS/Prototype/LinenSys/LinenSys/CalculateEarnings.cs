@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace LinenSys
 {
-    public partial class CalculateEarnings : Form
+    public partial class frmCalculateEarnings : Form
     {
-        public CalculateEarnings()
+        public frmCalculateEarnings()
         {
             InitializeComponent();
         }

@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace LinenSys
 {
-    public partial class CancelOrder : Form
+    public partial class frmCancelOrder : Form
     {
-        public CancelOrder()
+        public frmCancelOrder()
         {
             InitializeComponent();
         }
