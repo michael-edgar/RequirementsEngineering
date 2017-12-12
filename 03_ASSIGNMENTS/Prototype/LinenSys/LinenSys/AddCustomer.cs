@@ -24,5 +24,19 @@ namespace LinenSys
             this.Close();
             parent.Show();
         }
+
+        private void btnAddLinen_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Customer added to the system", "Added Customer");
+            txtCompanyName.Clear();
+            txtContactNumber.Clear();
+            txtCounty.Clear();
+            txtCustomerName.Clear();
+            txtEircode.Clear();
+            txtEmail.Clear();
+            txtStreet.Clear();
+            txtTown.Clear();
+            return;
+        }
     }
 }

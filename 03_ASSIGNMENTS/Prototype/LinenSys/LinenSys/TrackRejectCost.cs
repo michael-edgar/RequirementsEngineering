@@ -24,5 +24,12 @@ namespace LinenSys
             this.Close();
             parent.Show();
         }
+
+        private void btnCalculateRejectCost_Click(object sender, EventArgs e)
+        {
+            label1.Visible = true;
+            txtCost.Visible = true;
+            txtCost.Text = "2000";
+        }
     }
 }

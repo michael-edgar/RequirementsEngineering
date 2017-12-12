@@ -29,8 +29,8 @@
         private void InitializeComponent()
         {
             this.label1 = new System.Windows.Forms.Label();
-            this.txtOrdId = new System.Windows.Forms.TextBox();
-            this.txtSname = new System.Windows.Forms.TextBox();
+            this.txtOrderId = new System.Windows.Forms.TextBox();
+            this.txtCustomerName = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.btnSearch = new System.Windows.Forms.Button();
             this.grdCustomers = new System.Windows.Forms.DataGridView();
@@ -39,7 +39,7 @@
             this.Forename = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Phone = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.grpCustomer = new System.Windows.Forms.GroupBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.txtCustomerID = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.grpLinen = new System.Windows.Forms.GroupBox();
             this.btnAdd = new System.Windows.Forms.Button();
@@ -47,8 +47,8 @@
             this.label4 = new System.Windows.Forms.Label();
             this.cboLinen = new System.Windows.Forms.ComboBox();
             this.lstItems = new System.Windows.Forms.ListBox();
-            this.btnComplete = new System.Windows.Forms.Button();
-            this.btnDel = new System.Windows.Forms.Button();
+            this.btnCompleteOrder = new System.Windows.Forms.Button();
+            this.btnDelete = new System.Windows.Forms.Button();
             this.mnuUpdateLinen = new System.Windows.Forms.MenuStrip();
             this.backToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             ((System.ComponentModel.ISupportInitialize)(this.grdCustomers)).BeginInit();
@@ -66,21 +66,21 @@
             this.label1.TabIndex = 0;
             this.label1.Text = "Order ID";
             // 
-            // txtOrdId
+            // txtOrderId
             // 
-            this.txtOrdId.Enabled = false;
-            this.txtOrdId.Location = new System.Drawing.Point(95, 34);
-            this.txtOrdId.Name = "txtOrdId";
-            this.txtOrdId.Size = new System.Drawing.Size(64, 20);
-            this.txtOrdId.TabIndex = 1;
-            this.txtOrdId.Text = "0156";
+            this.txtOrderId.Enabled = false;
+            this.txtOrderId.Location = new System.Drawing.Point(95, 34);
+            this.txtOrderId.Name = "txtOrderId";
+            this.txtOrderId.Size = new System.Drawing.Size(64, 20);
+            this.txtOrderId.TabIndex = 1;
+            this.txtOrderId.Text = "0156";
             // 
-            // txtSname
+            // txtCustomerName
             // 
-            this.txtSname.Location = new System.Drawing.Point(224, 82);
-            this.txtSname.Name = "txtSname";
-            this.txtSname.Size = new System.Drawing.Size(178, 20);
-            this.txtSname.TabIndex = 3;
+            this.txtCustomerName.Location = new System.Drawing.Point(222, 86);
+            this.txtCustomerName.Name = "txtCustomerName";
+            this.txtCustomerName.Size = new System.Drawing.Size(178, 20);
+            this.txtCustomerName.TabIndex = 3;
             // 
             // label2
             // 
@@ -93,7 +93,7 @@
             // 
             // btnSearch
             // 
-            this.btnSearch.Location = new System.Drawing.Point(441, 79);
+            this.btnSearch.Location = new System.Drawing.Point(427, 86);
             this.btnSearch.Name = "btnSearch";
             this.btnSearch.Size = new System.Drawing.Size(74, 22);
             this.btnSearch.TabIndex = 4;
@@ -138,33 +138,32 @@
             // 
             // grpCustomer
             // 
-            this.grpCustomer.Controls.Add(this.textBox1);
+            this.grpCustomer.Controls.Add(this.txtCustomerID);
             this.grpCustomer.Controls.Add(this.label3);
-            this.grpCustomer.Location = new System.Drawing.Point(56, 254);
+            this.grpCustomer.Location = new System.Drawing.Point(56, 243);
             this.grpCustomer.Name = "grpCustomer";
-            this.grpCustomer.Size = new System.Drawing.Size(322, 90);
+            this.grpCustomer.Size = new System.Drawing.Size(167, 69);
             this.grpCustomer.TabIndex = 6;
             this.grpCustomer.TabStop = false;
             this.grpCustomer.Text = "Selected Customer";
             this.grpCustomer.Visible = false;
             // 
-            // textBox1
+            // txtCustomerID
             // 
-            this.textBox1.Enabled = false;
-            this.textBox1.Location = new System.Drawing.Point(69, 19);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(64, 20);
-            this.textBox1.TabIndex = 3;
-            this.textBox1.Text = "0017";
+            this.txtCustomerID.Enabled = false;
+            this.txtCustomerID.Location = new System.Drawing.Point(87, 23);
+            this.txtCustomerID.Name = "txtCustomerID";
+            this.txtCustomerID.Size = new System.Drawing.Size(64, 20);
+            this.txtCustomerID.TabIndex = 3;
             // 
             // label3
             // 
             this.label3.AutoSize = true;
             this.label3.Location = new System.Drawing.Point(16, 26);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(42, 13);
+            this.label3.Size = new System.Drawing.Size(65, 13);
             this.label3.TabIndex = 2;
-            this.label3.Text = "Cust ID";
+            this.label3.Text = "Customer ID";
             // 
             // grpLinen
             // 
@@ -172,12 +171,12 @@
             this.grpLinen.Controls.Add(this.txtQty);
             this.grpLinen.Controls.Add(this.label4);
             this.grpLinen.Controls.Add(this.cboLinen);
-            this.grpLinen.Location = new System.Drawing.Point(56, 364);
+            this.grpLinen.Location = new System.Drawing.Point(247, 243);
             this.grpLinen.Name = "grpLinen";
             this.grpLinen.Size = new System.Drawing.Size(477, 69);
             this.grpLinen.TabIndex = 11;
             this.grpLinen.TabStop = false;
-            this.grpLinen.Text = "groupBox1";
+            this.grpLinen.Text = "Linen";
             // 
             // btnAdd
             // 
@@ -210,7 +209,7 @@
             this.cboLinen.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cboLinen.FormattingEnabled = true;
             this.cboLinen.Items.AddRange(new object[] {
-            "BM Bathe Mat",
+            "BM Bath Mat",
             "BS Bath Sheet",
             "HT Hand Towel"});
             this.cboLinen.Location = new System.Drawing.Point(17, 24);
@@ -221,29 +220,30 @@
             // lstItems
             // 
             this.lstItems.FormattingEnabled = true;
-            this.lstItems.Location = new System.Drawing.Point(587, 281);
+            this.lstItems.Location = new System.Drawing.Point(56, 333);
             this.lstItems.Name = "lstItems";
             this.lstItems.Size = new System.Drawing.Size(211, 186);
             this.lstItems.TabIndex = 12;
             // 
-            // btnComplete
+            // btnCompleteOrder
             // 
-            this.btnComplete.Location = new System.Drawing.Point(587, 485);
-            this.btnComplete.Name = "btnComplete";
-            this.btnComplete.Size = new System.Drawing.Size(211, 22);
-            this.btnComplete.TabIndex = 15;
-            this.btnComplete.Text = "Complete Order";
-            this.btnComplete.UseVisualStyleBackColor = true;
+            this.btnCompleteOrder.Location = new System.Drawing.Point(281, 529);
+            this.btnCompleteOrder.Name = "btnCompleteOrder";
+            this.btnCompleteOrder.Size = new System.Drawing.Size(211, 22);
+            this.btnCompleteOrder.TabIndex = 15;
+            this.btnCompleteOrder.Text = "Complete Order";
+            this.btnCompleteOrder.UseVisualStyleBackColor = true;
+            this.btnCompleteOrder.Click += new System.EventHandler(this.btnCompleteOrder_Click);
             // 
-            // btnDel
+            // btnDelete
             // 
-            this.btnDel.Location = new System.Drawing.Point(804, 345);
-            this.btnDel.Name = "btnDel";
-            this.btnDel.Size = new System.Drawing.Size(74, 22);
-            this.btnDel.TabIndex = 16;
-            this.btnDel.Text = "Del";
-            this.btnDel.UseVisualStyleBackColor = true;
-            this.btnDel.Click += new System.EventHandler(this.btnDel_Click);
+            this.btnDelete.Location = new System.Drawing.Point(273, 362);
+            this.btnDelete.Name = "btnDelete";
+            this.btnDelete.Size = new System.Drawing.Size(74, 22);
+            this.btnDelete.TabIndex = 16;
+            this.btnDelete.Text = "Del";
+            this.btnDelete.UseVisualStyleBackColor = true;
+            this.btnDelete.Click += new System.EventHandler(this.btnDel_Click);
             // 
             // mnuUpdateLinen
             // 
@@ -251,7 +251,7 @@
             this.backToolStripMenuItem});
             this.mnuUpdateLinen.Location = new System.Drawing.Point(0, 0);
             this.mnuUpdateLinen.Name = "mnuUpdateLinen";
-            this.mnuUpdateLinen.Size = new System.Drawing.Size(937, 24);
+            this.mnuUpdateLinen.Size = new System.Drawing.Size(745, 24);
             this.mnuUpdateLinen.TabIndex = 17;
             this.mnuUpdateLinen.Text = "mnuUpdateLinen";
             // 
@@ -266,22 +266,21 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(937, 586);
+            this.ClientSize = new System.Drawing.Size(745, 559);
             this.Controls.Add(this.mnuUpdateLinen);
-            this.Controls.Add(this.btnDel);
-            this.Controls.Add(this.btnComplete);
+            this.Controls.Add(this.btnDelete);
+            this.Controls.Add(this.btnCompleteOrder);
             this.Controls.Add(this.lstItems);
             this.Controls.Add(this.grpLinen);
             this.Controls.Add(this.grpCustomer);
             this.Controls.Add(this.grdCustomers);
             this.Controls.Add(this.btnSearch);
-            this.Controls.Add(this.txtSname);
+            this.Controls.Add(this.txtCustomerName);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.txtOrdId);
+            this.Controls.Add(this.txtOrderId);
             this.Controls.Add(this.label1);
             this.Name = "frmLogOrder";
             this.Text = "LogOrder";
-            this.Load += new System.EventHandler(this.frmLogOrder_Load);
             ((System.ComponentModel.ISupportInitialize)(this.grdCustomers)).EndInit();
             this.grpCustomer.ResumeLayout(false);
             this.grpCustomer.PerformLayout();
@@ -297,8 +296,8 @@
         #endregion
 
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox txtOrdId;
-        private System.Windows.Forms.TextBox txtSname;
+        private System.Windows.Forms.TextBox txtOrderId;
+        private System.Windows.Forms.TextBox txtCustomerName;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Button btnSearch;
         private System.Windows.Forms.DataGridView grdCustomers;
@@ -307,7 +306,7 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn Forename;
         private System.Windows.Forms.DataGridViewTextBoxColumn Phone;
         private System.Windows.Forms.GroupBox grpCustomer;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox txtCustomerID;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.GroupBox grpLinen;
         private System.Windows.Forms.Button btnAdd;
@@ -315,8 +314,8 @@
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.ComboBox cboLinen;
         private System.Windows.Forms.ListBox lstItems;
-        private System.Windows.Forms.Button btnComplete;
-        private System.Windows.Forms.Button btnDel;
+        private System.Windows.Forms.Button btnCompleteOrder;
+        private System.Windows.Forms.Button btnDelete;
         private System.Windows.Forms.MenuStrip mnuUpdateLinen;
         private System.Windows.Forms.ToolStripMenuItem backToolStripMenuItem;
     }

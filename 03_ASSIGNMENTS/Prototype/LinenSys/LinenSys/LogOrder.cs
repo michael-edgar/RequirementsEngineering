@@ -31,16 +31,12 @@ namespace LinenSys
             grdCustomers.Visible = true;
         }
 
-        private void frmLogOrder_Load(object sender, EventArgs e)
-        {
-
-        }
-
         private void grdCustomers_CellClick(object sender, DataGridViewCellEventArgs e)
         {
 
             //display selected customer
             grpCustomer.Visible = true;
+            txtCustomerID.Text = "114";
         }
 
         private void btnAdd_Click(object sender, EventArgs e)
@@ -57,6 +53,11 @@ namespace LinenSys
         {
             this.Close();
             parent.Show();
+        }
+
+        private void btnCompleteOrder_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Order has been made", "Completed Order");
         }
     }
 }

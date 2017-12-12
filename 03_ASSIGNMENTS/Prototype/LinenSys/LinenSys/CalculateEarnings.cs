@@ -24,5 +24,12 @@ namespace LinenSys
             this.Close();
             parent.Show();
         }
+
+        private void btnCalculateEarnings_Click(object sender, EventArgs e)
+        {
+            label1.Visible = true;
+            txtEarnings.Visible = true;
+            txtEarnings.Text = "20000.25";
+        }
     }
 }

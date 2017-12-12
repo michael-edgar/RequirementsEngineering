@@ -62,7 +62,7 @@
             this.grpLinen.Controls.Add(this.lblHirePrice);
             this.grpLinen.Controls.Add(this.lblLinenCode);
             this.grpLinen.Controls.Add(this.lblLinenName);
-            this.grpLinen.Location = new System.Drawing.Point(12, 48);
+            this.grpLinen.Location = new System.Drawing.Point(12, 27);
             this.grpLinen.Name = "grpLinen";
             this.grpLinen.Size = new System.Drawing.Size(273, 286);
             this.grpLinen.TabIndex = 5;
@@ -167,7 +167,7 @@
             // 
             // btnAddLinen
             // 
-            this.btnAddLinen.Location = new System.Drawing.Point(254, 340);
+            this.btnAddLinen.Location = new System.Drawing.Point(133, 322);
             this.btnAddLinen.Name = "btnAddLinen";
             this.btnAddLinen.Size = new System.Drawing.Size(75, 23);
             this.btnAddLinen.TabIndex = 6;
@@ -181,7 +181,7 @@
             this.backToolStripMenuItem});
             this.mnuAddLinen.Location = new System.Drawing.Point(0, 0);
             this.mnuAddLinen.Name = "mnuAddLinen";
-            this.mnuAddLinen.Size = new System.Drawing.Size(560, 24);
+            this.mnuAddLinen.Size = new System.Drawing.Size(314, 24);
             this.mnuAddLinen.TabIndex = 7;
             this.mnuAddLinen.Text = "mnuAddLinen";
             // 
@@ -196,7 +196,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(560, 378);
+            this.ClientSize = new System.Drawing.Size(314, 378);
             this.Controls.Add(this.btnAddLinen);
             this.Controls.Add(this.grpLinen);
             this.Controls.Add(this.mnuAddLinen);
