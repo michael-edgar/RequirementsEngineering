@@ -29,21 +29,21 @@
         private void InitializeComponent()
         {
             this.grpLinen = new System.Windows.Forms.GroupBox();
+            this.txtPackSize = new System.Windows.Forms.TextBox();
+            this.lblPackSize = new System.Windows.Forms.Label();
             this.txtRejectPrice = new System.Windows.Forms.TextBox();
             this.txtCleaningPrice = new System.Windows.Forms.TextBox();
             this.txtHirePrice = new System.Windows.Forms.TextBox();
             this.txtLinenCode = new System.Windows.Forms.TextBox();
             this.txtLinenName = new System.Windows.Forms.TextBox();
-            this.label5 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
+            this.lblRejectPrice = new System.Windows.Forms.Label();
+            this.lblCleaningPrice = new System.Windows.Forms.Label();
+            this.lblHirePrice = new System.Windows.Forms.Label();
+            this.lblLinenCode = new System.Windows.Forms.Label();
+            this.lblLinenName = new System.Windows.Forms.Label();
             this.btnAddLinen = new System.Windows.Forms.Button();
             this.mnuAddLinen = new System.Windows.Forms.MenuStrip();
             this.backToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.label6 = new System.Windows.Forms.Label();
-            this.txtPackSize = new System.Windows.Forms.TextBox();
             this.grpLinen.SuspendLayout();
             this.mnuAddLinen.SuspendLayout();
             this.SuspendLayout();
@@ -51,23 +51,39 @@
             // grpLinen
             // 
             this.grpLinen.Controls.Add(this.txtPackSize);
-            this.grpLinen.Controls.Add(this.label6);
+            this.grpLinen.Controls.Add(this.lblPackSize);
             this.grpLinen.Controls.Add(this.txtRejectPrice);
             this.grpLinen.Controls.Add(this.txtCleaningPrice);
             this.grpLinen.Controls.Add(this.txtHirePrice);
             this.grpLinen.Controls.Add(this.txtLinenCode);
             this.grpLinen.Controls.Add(this.txtLinenName);
-            this.grpLinen.Controls.Add(this.label5);
-            this.grpLinen.Controls.Add(this.label4);
-            this.grpLinen.Controls.Add(this.label3);
-            this.grpLinen.Controls.Add(this.label2);
-            this.grpLinen.Controls.Add(this.label1);
+            this.grpLinen.Controls.Add(this.lblRejectPrice);
+            this.grpLinen.Controls.Add(this.lblCleaningPrice);
+            this.grpLinen.Controls.Add(this.lblHirePrice);
+            this.grpLinen.Controls.Add(this.lblLinenCode);
+            this.grpLinen.Controls.Add(this.lblLinenName);
             this.grpLinen.Location = new System.Drawing.Point(12, 48);
             this.grpLinen.Name = "grpLinen";
             this.grpLinen.Size = new System.Drawing.Size(273, 286);
             this.grpLinen.TabIndex = 5;
             this.grpLinen.TabStop = false;
             this.grpLinen.Text = "Linen";
+            // 
+            // txtPackSize
+            // 
+            this.txtPackSize.Location = new System.Drawing.Point(121, 245);
+            this.txtPackSize.Name = "txtPackSize";
+            this.txtPackSize.Size = new System.Drawing.Size(146, 20);
+            this.txtPackSize.TabIndex = 16;
+            // 
+            // lblPackSize
+            // 
+            this.lblPackSize.AutoSize = true;
+            this.lblPackSize.Location = new System.Drawing.Point(6, 248);
+            this.lblPackSize.Name = "lblPackSize";
+            this.lblPackSize.Size = new System.Drawing.Size(58, 13);
+            this.lblPackSize.TabIndex = 15;
+            this.lblPackSize.Text = "Pack Size:";
             // 
             // txtRejectPrice
             // 
@@ -104,50 +120,50 @@
             this.txtLinenName.Size = new System.Drawing.Size(146, 20);
             this.txtLinenName.TabIndex = 10;
             // 
-            // label5
+            // lblRejectPrice
             // 
-            this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(6, 208);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(68, 13);
-            this.label5.TabIndex = 9;
-            this.label5.Text = "Reject Price:";
+            this.lblRejectPrice.AutoSize = true;
+            this.lblRejectPrice.Location = new System.Drawing.Point(6, 208);
+            this.lblRejectPrice.Name = "lblRejectPrice";
+            this.lblRejectPrice.Size = new System.Drawing.Size(68, 13);
+            this.lblRejectPrice.TabIndex = 9;
+            this.lblRejectPrice.Text = "Reject Price:";
             // 
-            // label4
+            // lblCleaningPrice
             // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(6, 166);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(78, 13);
-            this.label4.TabIndex = 8;
-            this.label4.Text = "Cleaning Price:";
+            this.lblCleaningPrice.AutoSize = true;
+            this.lblCleaningPrice.Location = new System.Drawing.Point(6, 166);
+            this.lblCleaningPrice.Name = "lblCleaningPrice";
+            this.lblCleaningPrice.Size = new System.Drawing.Size(78, 13);
+            this.lblCleaningPrice.TabIndex = 8;
+            this.lblCleaningPrice.Text = "Cleaning Price:";
             // 
-            // label3
+            // lblHirePrice
             // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(6, 116);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(56, 13);
-            this.label3.TabIndex = 7;
-            this.label3.Text = "Hire Price:";
+            this.lblHirePrice.AutoSize = true;
+            this.lblHirePrice.Location = new System.Drawing.Point(6, 116);
+            this.lblHirePrice.Name = "lblHirePrice";
+            this.lblHirePrice.Size = new System.Drawing.Size(56, 13);
+            this.lblHirePrice.TabIndex = 7;
+            this.lblHirePrice.Text = "Hire Price:";
             // 
-            // label2
+            // lblLinenCode
             // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(6, 65);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(64, 13);
-            this.label2.TabIndex = 6;
-            this.label2.Text = "Linen Code:";
+            this.lblLinenCode.AutoSize = true;
+            this.lblLinenCode.Location = new System.Drawing.Point(6, 65);
+            this.lblLinenCode.Name = "lblLinenCode";
+            this.lblLinenCode.Size = new System.Drawing.Size(64, 13);
+            this.lblLinenCode.TabIndex = 6;
+            this.lblLinenCode.Text = "Linen Code:";
             // 
-            // label1
+            // lblLinenName
             // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(6, 16);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(67, 13);
-            this.label1.TabIndex = 5;
-            this.label1.Text = "Linen Name:";
+            this.lblLinenName.AutoSize = true;
+            this.lblLinenName.Location = new System.Drawing.Point(6, 16);
+            this.lblLinenName.Name = "lblLinenName";
+            this.lblLinenName.Size = new System.Drawing.Size(67, 13);
+            this.lblLinenName.TabIndex = 5;
+            this.lblLinenName.Text = "Linen Name:";
             // 
             // btnAddLinen
             // 
@@ -175,22 +191,6 @@
             this.backToolStripMenuItem.Size = new System.Drawing.Size(44, 20);
             this.backToolStripMenuItem.Text = "Back";
             this.backToolStripMenuItem.Click += new System.EventHandler(this.backToolStripMenuItem_Click);
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(6, 248);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(58, 13);
-            this.label6.TabIndex = 15;
-            this.label6.Text = "Pack Size:";
-            // 
-            // txtPackSize
-            // 
-            this.txtPackSize.Location = new System.Drawing.Point(121, 245);
-            this.txtPackSize.Name = "txtPackSize";
-            this.txtPackSize.Size = new System.Drawing.Size(146, 20);
-            this.txtPackSize.TabIndex = 16;
             // 
             // frmAddLinen
             // 
@@ -221,16 +221,16 @@
         private System.Windows.Forms.TextBox txtHirePrice;
         private System.Windows.Forms.TextBox txtLinenCode;
         private System.Windows.Forms.TextBox txtLinenName;
-        private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label lblRejectPrice;
+        private System.Windows.Forms.Label lblCleaningPrice;
+        private System.Windows.Forms.Label lblHirePrice;
+        private System.Windows.Forms.Label lblLinenCode;
+        private System.Windows.Forms.Label lblLinenName;
         private System.Windows.Forms.Button btnAddLinen;
         private System.Windows.Forms.MenuStrip mnuAddLinen;
         private System.Windows.Forms.ToolStripMenuItem backToolStripMenuItem;
         private System.Windows.Forms.TextBox txtPackSize;
-        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.Label lblPackSize;
     }
 }
 

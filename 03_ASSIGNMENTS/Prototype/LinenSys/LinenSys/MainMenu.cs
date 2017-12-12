@@ -32,7 +32,7 @@ namespace LinenSys
         private void updateLinenToolStripMenuItem_Click(object sender, EventArgs e)
         {
             this.Hide();
-            frmUpdateLinen frmNextForm = new frmUpdateLinen();
+            frmUpdateLinen frmNextForm = new frmUpdateLinen(this);
             frmNextForm.Show();
         }
 

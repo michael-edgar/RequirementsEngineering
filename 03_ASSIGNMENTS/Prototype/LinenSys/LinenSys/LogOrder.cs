@@ -16,5 +16,39 @@ namespace LinenSys
         {
             InitializeComponent();
         }
+
+        private void btnSearch_Click(object sender, EventArgs e)
+        {
+            //add some dummy customers
+            grdCustomers.Rows.Add("0254","WALSH","ADAM","0871234567");
+            grdCustomers.Rows.Add("0114", "WALSH", "JOHN", "0871232227");
+            grdCustomers.Rows.Add("0202", "WILSON", "ANN", "0871244467");
+            grdCustomers.Rows.Add("0017", "WOODS", "KEN", "0872222267");
+
+            //display customers
+            grdCustomers.Visible = true;
+        }
+
+        private void frmLogOrder_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void grdCustomers_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+            //display selected customer
+            grpCustomer.Visible = true;
+        }
+
+        private void btnAdd_Click(object sender, EventArgs e)
+        {
+            lstItems.Items.Add(cboLinen.Text+ "       " +txtQty.Text);
+        }
+
+        private void btnDel_Click(object sender, EventArgs e)
+        {
+            lstItems.Items.RemoveAt(lstItems.SelectedIndex);
+        }
     }
 }

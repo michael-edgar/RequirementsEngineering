@@ -30,7 +30,6 @@ namespace LinenSys
             //validate data
             float check;
             int checkInt;
-            String checkString;
 
             if (txtLinenName.Text.Equals(""))
             {
@@ -70,6 +69,7 @@ namespace LinenSys
             if (!int.TryParse(txtPackSize.Text, out checkInt))
             {
                 MessageBox.Show("Pack Size must be numeric", "Error");
+                txtPackSize.Focus();
                 return;
             }
 
@@ -78,7 +78,7 @@ namespace LinenSys
                 String addedLinen;
                 addedLinen = "\nLinen Name: " + txtLinenName.Text + "\nLinen Code: " + txtLinenCode.Text + 
                              "\nHire Price: " + txtHirePrice.Text + "\nCleaning Price: " + 
-                             txtCleaningPrice.Text + "\nReject Price: " + txtRejectPrice.Text;
+                             txtCleaningPrice.Text + "\nReject Price: " + txtRejectPrice.Text+ "\nPack Size: " +txtPackSize.Text;
 
                 MessageBox.Show("The new Linen has been added to the system." +addedLinen , "Added Linen");
                 txtLinenName.Clear();
