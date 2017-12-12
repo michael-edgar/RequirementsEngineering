@@ -12,9 +12,17 @@ namespace LinenSys
 {
     public partial class frmRemoveLinen : Form
     {
-        public frmRemoveLinen()
+        frmMainMenu parent;
+        public frmRemoveLinen(frmMainMenu Parent)
         {
             InitializeComponent();
+            parent = Parent;
+        }
+
+        private void backToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            this.Close();
+            parent.Show();
         }
     }
 }

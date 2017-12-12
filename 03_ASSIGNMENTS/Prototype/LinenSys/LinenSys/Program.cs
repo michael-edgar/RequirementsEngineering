@@ -16,7 +16,7 @@ namespace LinenSys
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new frmLogOrder());
+            Application.Run(new frmMainMenu());
         }
     }
 }

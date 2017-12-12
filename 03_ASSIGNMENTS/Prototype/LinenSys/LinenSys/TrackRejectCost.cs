@@ -12,9 +12,17 @@ namespace LinenSys
 {
     public partial class frmTrackRejectCost : Form
     {
-        public frmTrackRejectCost()
+        frmMainMenu parent;
+        public frmTrackRejectCost(frmMainMenu Parent)
         {
             InitializeComponent();
+            parent = Parent;
+        }
+
+        private void backToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            this.Close();
+            parent.Show();
         }
     }
 }

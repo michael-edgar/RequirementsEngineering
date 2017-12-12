@@ -12,9 +12,17 @@ namespace LinenSys
 {
     public partial class frmCollectLaundry : Form
     {
-        public frmCollectLaundry()
+        frmMainMenu parent;
+        public frmCollectLaundry(frmMainMenu Parent)
         {
             InitializeComponent();
+            parent = Parent;
+        }
+
+        private void backToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            this.Close();
+            parent.Show();
         }
     }
 }

@@ -12,9 +12,17 @@ namespace LinenSys
 {
     public partial class frmCancelOrder : Form
     {
-        public frmCancelOrder()
+        frmMainMenu parent;
+        public frmCancelOrder(frmMainMenu Parent)
         {
             InitializeComponent();
+            parent = Parent;
+        }
+
+        private void backToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            this.Close();
+            parent.Show();
         }
     }
 }

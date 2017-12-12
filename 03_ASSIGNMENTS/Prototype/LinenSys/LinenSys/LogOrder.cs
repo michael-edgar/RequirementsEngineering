@@ -12,9 +12,11 @@ namespace LinenSys
 {
     public partial class frmLogOrder : Form
     {
-        public frmLogOrder()
+        frmMainMenu parent;
+        public frmLogOrder(frmMainMenu Parent)
         {
             InitializeComponent();
+            parent = Parent;
         }
 
         private void btnSearch_Click(object sender, EventArgs e)
@@ -49,6 +51,12 @@ namespace LinenSys
         private void btnDel_Click(object sender, EventArgs e)
         {
             lstItems.Items.RemoveAt(lstItems.SelectedIndex);
+        }
+
+        private void backToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            this.Close();
+            parent.Show();
         }
     }
 }

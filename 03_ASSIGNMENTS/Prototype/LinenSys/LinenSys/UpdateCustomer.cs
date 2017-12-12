@@ -12,9 +12,17 @@ namespace LinenSys
 {
     public partial class frmUpdateCustomer : Form
     {
-        public frmUpdateCustomer()
+        frmMainMenu parent;
+        public frmUpdateCustomer(frmMainMenu Parent)
         {
             InitializeComponent();
+            parent = Parent;
+        }
+
+        private void backToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            this.Close();
+            parent.Show();
         }
     }
 }

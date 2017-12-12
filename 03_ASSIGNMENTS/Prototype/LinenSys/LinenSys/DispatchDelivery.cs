@@ -12,9 +12,17 @@ namespace LinenSys
 {
     public partial class frmDispatchDelivery : Form
     {
-        public frmDispatchDelivery()
+        frmMainMenu parent;
+        public frmDispatchDelivery(frmMainMenu Parent)
         {
             InitializeComponent();
+            parent = Parent;
+        }
+
+        private void backToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            this.Close();
+            parent.Show();
         }
     }
 }

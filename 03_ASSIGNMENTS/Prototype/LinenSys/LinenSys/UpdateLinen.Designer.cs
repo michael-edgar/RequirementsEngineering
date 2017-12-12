@@ -35,6 +35,7 @@
             this.lblLinenNames = new System.Windows.Forms.Label();
             this.grpLinen = new System.Windows.Forms.GroupBox();
             this.txtPackSize = new System.Windows.Forms.TextBox();
+            this.btnUpdateLinen = new System.Windows.Forms.Button();
             this.lblPackSize = new System.Windows.Forms.Label();
             this.txtRejectPrice = new System.Windows.Forms.TextBox();
             this.txtCleaningPrice = new System.Windows.Forms.TextBox();
@@ -44,7 +45,6 @@
             this.lblCleaningPrice = new System.Windows.Forms.Label();
             this.lblHirePrice = new System.Windows.Forms.Label();
             this.lblLinenName = new System.Windows.Forms.Label();
-            this.btnUpdateLinen = new System.Windows.Forms.Button();
             this.mnuUpdateLinen = new System.Windows.Forms.MenuStrip();
             this.backToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.grpLinen.SuspendLayout();
@@ -79,6 +79,7 @@
             // 
             // cboLinenNames
             // 
+            this.cboLinenNames.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cboLinenNames.FormattingEnabled = true;
             this.cboLinenNames.ImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.cboLinenNames.Location = new System.Drawing.Point(163, 203);
@@ -86,6 +87,7 @@
             this.cboLinenNames.Size = new System.Drawing.Size(123, 21);
             this.cboLinenNames.TabIndex = 3;
             this.cboLinenNames.Visible = false;
+            this.cboLinenNames.SelectedIndexChanged += new System.EventHandler(this.cboLinenNames_SelectedIndexChanged);
             // 
             // lblLinenNames
             // 
@@ -124,6 +126,16 @@
             this.txtPackSize.Name = "txtPackSize";
             this.txtPackSize.Size = new System.Drawing.Size(146, 20);
             this.txtPackSize.TabIndex = 16;
+            // 
+            // btnUpdateLinen
+            // 
+            this.btnUpdateLinen.Location = new System.Drawing.Point(93, 234);
+            this.btnUpdateLinen.Name = "btnUpdateLinen";
+            this.btnUpdateLinen.Size = new System.Drawing.Size(75, 23);
+            this.btnUpdateLinen.TabIndex = 7;
+            this.btnUpdateLinen.Text = "Save";
+            this.btnUpdateLinen.UseVisualStyleBackColor = true;
+            this.btnUpdateLinen.Click += new System.EventHandler(this.btnUpdateLinen_Click);
             // 
             // lblPackSize
             // 
@@ -197,16 +209,6 @@
             this.lblLinenName.Size = new System.Drawing.Size(67, 13);
             this.lblLinenName.TabIndex = 5;
             this.lblLinenName.Text = "Linen Name:";
-            // 
-            // btnUpdateLinen
-            // 
-            this.btnUpdateLinen.Location = new System.Drawing.Point(93, 234);
-            this.btnUpdateLinen.Name = "btnUpdateLinen";
-            this.btnUpdateLinen.Size = new System.Drawing.Size(75, 23);
-            this.btnUpdateLinen.TabIndex = 7;
-            this.btnUpdateLinen.Text = "Save";
-            this.btnUpdateLinen.UseVisualStyleBackColor = true;
-            this.btnUpdateLinen.Click += new System.EventHandler(this.btnUpdateLinen_Click);
             // 
             // mnuUpdateLinen
             // 

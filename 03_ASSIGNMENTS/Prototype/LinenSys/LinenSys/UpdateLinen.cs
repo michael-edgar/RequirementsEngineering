@@ -27,7 +27,7 @@ namespace LinenSys
             if (linenCode.Equals(""))
             {
                 MessageBox.Show("Linen Name must be entered", "Error");
-                txtLinenName.Focus();
+                txtLinenCode.Focus();
                 return;
             }
 
@@ -35,32 +35,45 @@ namespace LinenSys
             {
                 lblLinenNames.Visible = true;
                 cboLinenNames.Visible = true;
-                cboLinenNames.Text = "Bath Sheet" + "Bath Mat";
+                cboLinenNames.Items.Add("Bath Mat");
+                cboLinenNames.Items.Add("Bath Sheet");
             }
 
             else if (linenCode.StartsWith("h"))
             {
-
+                lblLinenNames.Visible = true;
+                cboLinenNames.Visible = true;
+                cboLinenNames.Items.Add("Hand Towel");
             }
 
             else if (linenCode.StartsWith("s"))
             {
-
+                lblLinenNames.Visible = true;
+                cboLinenNames.Visible = true;
+                cboLinenNames.Items.Add("Single Sheet");
+                cboLinenNames.Items.Add("Single Duvet");
             }
 
             else if (linenCode.StartsWith("k"))
             {
-
+                lblLinenNames.Visible = true;
+                cboLinenNames.Visible = true;
+                cboLinenNames.Items.Add("King Sheet");
+                cboLinenNames.Items.Add("King Duvet");
             }
 
             else if (linenCode.StartsWith("p"))
             {
-
+                lblLinenNames.Visible = true;
+                cboLinenNames.Visible = true;
+                cboLinenNames.Items.Add("Pillow Slip");
             }
 
             else
             {
-
+                MessageBox.Show("No active linen matching linen code was found, please re-enter");
+                txtLinenCode.Focus();
+                return;
             }
         }
 
@@ -70,9 +83,9 @@ namespace LinenSys
             float check;
             int checkInt;
 
-            if (txtLinenName.Text.Equals(""))
+            if (txtLinenName.Text.Equals("") && txtHirePrice.Text.Equals("") && txtCleaningPrice.Text.Equals("") && txtRejectPrice.Text.Equals("") && txtPackSize.Text.Equals(""))
             {
-                MessageBox.Show("Linen Name must be entered", "Error");
+                MessageBox.Show("At least one field must be entered", "Error");
                 txtLinenName.Focus();
                 return;
             }
@@ -106,12 +119,12 @@ namespace LinenSys
 
             else
             {
-                String addedLinen;
-                addedLinen = "\nLinen Name: " + txtLinenName.Text + "\nLinen Code: " + txtLinenCode.Text +
+                String updateLinen;
+                updateLinen = "\nLinen Name: " + txtLinenName.Text + "\nLinen Code: " + txtLinenCode.Text +
                              "\nHire Price: " + txtHirePrice.Text + "\nCleaning Price: " +
                              txtCleaningPrice.Text + "\nReject Price: " + txtRejectPrice.Text;
 
-                MessageBox.Show("The new Linen has been added to the system." + addedLinen, "Added Linen");
+                MessageBox.Show("The updated lined has been saved to the system." + updateLinen, "Update Linen");
                 txtLinenName.Clear();
                 txtLinenCode.Clear();
                 txtHirePrice.Clear();
@@ -126,6 +139,43 @@ namespace LinenSys
         {
             this.Close();
             parent.Show();
+        }
+
+        private void cboLinenNames_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            grpLinen.Visible = true;
+            if(cboLinenNames.SelectedText.Equals("Hand Towel"))
+            {
+
+            }
+            else if(cboLinenNames.SelectedText.Equals("Bath Sheet"))
+            {
+
+            }
+            else if(cboLinenNames.SelectedText.Equals("Bath Mat"))
+            {
+
+            }
+            else if(cboLinenNames.SelectedText.Equals("Single Sheet"))
+            {
+
+            }
+            else if(cboLinenNames.SelectedText.Equals("Single Duvet"))
+            {
+
+            }
+            else if(cboLinenNames.SelectedText.Equals("King Sheet"))
+            {
+
+            }
+            else if(cboLinenNames.SelectedText.Equals("King Duvet"))
+            {
+
+            }
+            else if(cboLinenNames.SelectedText.Equals("Pillow Slip"))
+            {
+
+            }
         }
     }
 }

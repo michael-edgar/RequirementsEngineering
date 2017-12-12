@@ -12,9 +12,17 @@ namespace LinenSys
 {
     public partial class frmRecordRejects : Form
     {
-        public frmRecordRejects()
+        frmMainMenu parent;
+        public frmRecordRejects(frmMainMenu Parent)
         {
             InitializeComponent();
+            parent = Parent;
+        }
+
+        private void backToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            this.Close();
+            parent.Show();
         }
     }
 }

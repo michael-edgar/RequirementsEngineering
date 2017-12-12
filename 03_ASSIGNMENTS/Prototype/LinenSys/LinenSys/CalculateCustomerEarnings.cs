@@ -12,9 +12,17 @@ namespace LinenSys
 {
     public partial class frmCalculateCustomerEarnings : Form
     {
-        public frmCalculateCustomerEarnings()
+        frmMainMenu parent;
+        public frmCalculateCustomerEarnings(frmMainMenu Parent)
         {
             InitializeComponent();
+            parent = Parent;
+        }
+
+        private void backToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            this.Close();
+            parent.Show();
         }
     }
 }

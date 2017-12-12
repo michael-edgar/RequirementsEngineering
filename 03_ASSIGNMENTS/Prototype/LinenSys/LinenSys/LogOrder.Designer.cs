@@ -49,9 +49,12 @@
             this.lstItems = new System.Windows.Forms.ListBox();
             this.btnComplete = new System.Windows.Forms.Button();
             this.btnDel = new System.Windows.Forms.Button();
+            this.mnuUpdateLinen = new System.Windows.Forms.MenuStrip();
+            this.backToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             ((System.ComponentModel.ISupportInitialize)(this.grdCustomers)).BeginInit();
             this.grpCustomer.SuspendLayout();
             this.grpLinen.SuspendLayout();
+            this.mnuUpdateLinen.SuspendLayout();
             this.SuspendLayout();
             // 
             // label1
@@ -242,11 +245,29 @@
             this.btnDel.UseVisualStyleBackColor = true;
             this.btnDel.Click += new System.EventHandler(this.btnDel_Click);
             // 
+            // mnuUpdateLinen
+            // 
+            this.mnuUpdateLinen.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.backToolStripMenuItem});
+            this.mnuUpdateLinen.Location = new System.Drawing.Point(0, 0);
+            this.mnuUpdateLinen.Name = "mnuUpdateLinen";
+            this.mnuUpdateLinen.Size = new System.Drawing.Size(937, 24);
+            this.mnuUpdateLinen.TabIndex = 17;
+            this.mnuUpdateLinen.Text = "mnuUpdateLinen";
+            // 
+            // backToolStripMenuItem
+            // 
+            this.backToolStripMenuItem.Name = "backToolStripMenuItem";
+            this.backToolStripMenuItem.Size = new System.Drawing.Size(44, 20);
+            this.backToolStripMenuItem.Text = "Back";
+            this.backToolStripMenuItem.Click += new System.EventHandler(this.backToolStripMenuItem_Click);
+            // 
             // frmLogOrder
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(937, 586);
+            this.Controls.Add(this.mnuUpdateLinen);
             this.Controls.Add(this.btnDel);
             this.Controls.Add(this.btnComplete);
             this.Controls.Add(this.lstItems);
@@ -266,6 +287,8 @@
             this.grpCustomer.PerformLayout();
             this.grpLinen.ResumeLayout(false);
             this.grpLinen.PerformLayout();
+            this.mnuUpdateLinen.ResumeLayout(false);
+            this.mnuUpdateLinen.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -294,5 +317,7 @@
         private System.Windows.Forms.ListBox lstItems;
         private System.Windows.Forms.Button btnComplete;
         private System.Windows.Forms.Button btnDel;
+        private System.Windows.Forms.MenuStrip mnuUpdateLinen;
+        private System.Windows.Forms.ToolStripMenuItem backToolStripMenuItem;
     }
 }
