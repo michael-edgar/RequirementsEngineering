@@ -16,5 +16,10 @@ namespace LinenSys
         {
             InitializeComponent();
         }
+
+        private void btnGetLinen_Click(object sender, EventArgs e)
+        {
+            String linenCode = txt;
+        }
     }
 }

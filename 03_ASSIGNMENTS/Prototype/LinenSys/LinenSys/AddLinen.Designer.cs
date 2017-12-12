@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.grpAddLinen = new System.Windows.Forms.GroupBox();
+            this.grpLinen = new System.Windows.Forms.GroupBox();
             this.txtRejectPrice = new System.Windows.Forms.TextBox();
             this.txtCleaningPrice = new System.Windows.Forms.TextBox();
             this.txtHirePrice = new System.Windows.Forms.TextBox();
@@ -40,30 +40,34 @@
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.btnAddLinen = new System.Windows.Forms.Button();
-            this.menuStrip1 = new System.Windows.Forms.MenuStrip();
+            this.mnuAddLinen = new System.Windows.Forms.MenuStrip();
             this.backToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.grpAddLinen.SuspendLayout();
-            this.menuStrip1.SuspendLayout();
+            this.label6 = new System.Windows.Forms.Label();
+            this.txtPackSize = new System.Windows.Forms.TextBox();
+            this.grpLinen.SuspendLayout();
+            this.mnuAddLinen.SuspendLayout();
             this.SuspendLayout();
             // 
-            // grpAddLinen
+            // grpLinen
             // 
-            this.grpAddLinen.Controls.Add(this.txtRejectPrice);
-            this.grpAddLinen.Controls.Add(this.txtCleaningPrice);
-            this.grpAddLinen.Controls.Add(this.txtHirePrice);
-            this.grpAddLinen.Controls.Add(this.txtLinenCode);
-            this.grpAddLinen.Controls.Add(this.txtLinenName);
-            this.grpAddLinen.Controls.Add(this.label5);
-            this.grpAddLinen.Controls.Add(this.label4);
-            this.grpAddLinen.Controls.Add(this.label3);
-            this.grpAddLinen.Controls.Add(this.label2);
-            this.grpAddLinen.Controls.Add(this.label1);
-            this.grpAddLinen.Location = new System.Drawing.Point(12, 48);
-            this.grpAddLinen.Name = "grpAddLinen";
-            this.grpAddLinen.Size = new System.Drawing.Size(273, 240);
-            this.grpAddLinen.TabIndex = 5;
-            this.grpAddLinen.TabStop = false;
-            this.grpAddLinen.Text = "Add Linen";
+            this.grpLinen.Controls.Add(this.txtPackSize);
+            this.grpLinen.Controls.Add(this.label6);
+            this.grpLinen.Controls.Add(this.txtRejectPrice);
+            this.grpLinen.Controls.Add(this.txtCleaningPrice);
+            this.grpLinen.Controls.Add(this.txtHirePrice);
+            this.grpLinen.Controls.Add(this.txtLinenCode);
+            this.grpLinen.Controls.Add(this.txtLinenName);
+            this.grpLinen.Controls.Add(this.label5);
+            this.grpLinen.Controls.Add(this.label4);
+            this.grpLinen.Controls.Add(this.label3);
+            this.grpLinen.Controls.Add(this.label2);
+            this.grpLinen.Controls.Add(this.label1);
+            this.grpLinen.Location = new System.Drawing.Point(12, 48);
+            this.grpLinen.Name = "grpLinen";
+            this.grpLinen.Size = new System.Drawing.Size(273, 286);
+            this.grpLinen.TabIndex = 5;
+            this.grpLinen.TabStop = false;
+            this.grpLinen.Text = "Linen";
             // 
             // txtRejectPrice
             // 
@@ -155,15 +159,15 @@
             this.btnAddLinen.UseVisualStyleBackColor = true;
             this.btnAddLinen.Click += new System.EventHandler(this.btnAddLinen_Click);
             // 
-            // menuStrip1
+            // mnuAddLinen
             // 
-            this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.mnuAddLinen.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.backToolStripMenuItem});
-            this.menuStrip1.Location = new System.Drawing.Point(0, 0);
-            this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(560, 24);
-            this.menuStrip1.TabIndex = 7;
-            this.menuStrip1.Text = "menuStrip1";
+            this.mnuAddLinen.Location = new System.Drawing.Point(0, 0);
+            this.mnuAddLinen.Name = "mnuAddLinen";
+            this.mnuAddLinen.Size = new System.Drawing.Size(560, 24);
+            this.mnuAddLinen.TabIndex = 7;
+            this.mnuAddLinen.Text = "mnuAddLinen";
             // 
             // backToolStripMenuItem
             // 
@@ -172,22 +176,38 @@
             this.backToolStripMenuItem.Text = "Back";
             this.backToolStripMenuItem.Click += new System.EventHandler(this.backToolStripMenuItem_Click);
             // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Location = new System.Drawing.Point(6, 248);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(58, 13);
+            this.label6.TabIndex = 15;
+            this.label6.Text = "Pack Size:";
+            // 
+            // txtPackSize
+            // 
+            this.txtPackSize.Location = new System.Drawing.Point(121, 245);
+            this.txtPackSize.Name = "txtPackSize";
+            this.txtPackSize.Size = new System.Drawing.Size(146, 20);
+            this.txtPackSize.TabIndex = 16;
+            // 
             // frmAddLinen
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(560, 375);
+            this.ClientSize = new System.Drawing.Size(560, 378);
             this.Controls.Add(this.btnAddLinen);
-            this.Controls.Add(this.grpAddLinen);
-            this.Controls.Add(this.menuStrip1);
-            this.MainMenuStrip = this.menuStrip1;
+            this.Controls.Add(this.grpLinen);
+            this.Controls.Add(this.mnuAddLinen);
+            this.MainMenuStrip = this.mnuAddLinen;
             this.Name = "frmAddLinen";
             this.Text = "Add Linen";
             this.Load += new System.EventHandler(this.frmAddLinen_Load);
-            this.grpAddLinen.ResumeLayout(false);
-            this.grpAddLinen.PerformLayout();
-            this.menuStrip1.ResumeLayout(false);
-            this.menuStrip1.PerformLayout();
+            this.grpLinen.ResumeLayout(false);
+            this.grpLinen.PerformLayout();
+            this.mnuAddLinen.ResumeLayout(false);
+            this.mnuAddLinen.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -195,7 +215,7 @@
 
         #endregion
 
-        private System.Windows.Forms.GroupBox grpAddLinen;
+        private System.Windows.Forms.GroupBox grpLinen;
         private System.Windows.Forms.TextBox txtRejectPrice;
         private System.Windows.Forms.TextBox txtCleaningPrice;
         private System.Windows.Forms.TextBox txtHirePrice;
@@ -207,8 +227,10 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button btnAddLinen;
-        private System.Windows.Forms.MenuStrip menuStrip1;
+        private System.Windows.Forms.MenuStrip mnuAddLinen;
         private System.Windows.Forms.ToolStripMenuItem backToolStripMenuItem;
+        private System.Windows.Forms.TextBox txtPackSize;
+        private System.Windows.Forms.Label label6;
     }
 }
 

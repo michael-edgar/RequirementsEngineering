@@ -29,36 +29,50 @@ namespace LinenSys
         {
             //validate data
             float check;
+            int checkInt;
+            String checkString;
+
             if (txtLinenName.Text.Equals(""))
             {
                 MessageBox.Show("Linen Name must be entered", "Error");
                 txtLinenName.Focus();
                 return;
             }
+
             if (txtLinenCode.Text.Equals(""))
             {
                 MessageBox.Show("Linen Name must be entered", "Error");
                 txtLinenName.Focus();
                 return;
             }
+
             if (!float.TryParse(txtHirePrice.Text, out check))
             {
                 MessageBox.Show("Hire Price must be numeric", "Error");
                 txtHirePrice.Focus();
                 return;
             }
+
             if (!float.TryParse(txtCleaningPrice.Text, out check))
             {
                 MessageBox.Show("Cleaning Price must be numeric", "Error");
                 txtCleaningPrice.Focus();
                 return;
             }
+
             if (!float.TryParse(txtRejectPrice.Text, out check))
             {
                 MessageBox.Show("Reject Price must be numeric", "Error");
                 txtRejectPrice.Focus();
                 return;
             }
+
+            if (!int.TryParse(txtPackSize.Text, out checkInt))
+            {
+                MessageBox.Show("Pack Size must be numeric", "Error");
+                return;
+            }
+
             else
             {
                 String addedLinen;
@@ -72,6 +86,7 @@ namespace LinenSys
                 txtHirePrice.Clear();
                 txtCleaningPrice.Clear();
                 txtRejectPrice.Clear();
+                txtPackSize.Clear();
                 return;
             }
         }
